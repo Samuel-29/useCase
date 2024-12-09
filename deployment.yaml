@@ -5,7 +5,7 @@ metadata:
   labels:
     app: webpage
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: webpage
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: webpage
-        image: samuelmaithre/webpage:v1
+        image: samuelmaithre/webpage:latest
         ports:
         - containerPort: 80
